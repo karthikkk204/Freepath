@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --page: #faf6ed;
+  --hero: #f8f5eb;
+  --card: #fffefa;
+  --text: #13231b;
+  --muted: #657069;
+  --border: #e5dfd1;
+  --green: #0a6b45;
+  --badge: #f6b647;
+  --tag: #f3eddf;
+
+  color: var(--text);
+  background: var(--page);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #101914;
+  --hero: #17231b;
+  --card: #18251e;
+  --text: #edf4ee;
+  --muted: #a7b5ab;
+  --border: #2b3a31;
+  --green: #51b586;
+  --badge: #e4a83e;
+  --tag: #29362c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--page);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: #fff;
+  background: var(--green);
+}
